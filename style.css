@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    background-color: rgb(78, 78, 78);
+}
+.main-game {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#screenmsg{
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    position: absolute;
+}
+section div:first-child {
+    position: absolute;
+    z-index: 9999;
+    border: 30px solid #ffffff;
+    background-color: #ffffff;
+    width: 700px;
+    height: 700px;
+}
+section div:last-child {
+    position: absolute;
+    z-index: 9999;
+    border: 30px solid #ffffff;
+    background-color: #ffffff;
+    width: 700px;
+    height: 700px;
+}
+.genius {
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    grid-gap: 10px;
+    border: 10px solid #000000;
+    background-color: #000000;
+    border-radius: 100%;
+    width: 700px;
+    height: 700px;
+}
+.centerbutton{
+    background-color: #000000;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px; 
+    z-index: 9997;
+    position: absolute;
+}
+.txtcenterbutton{
+    text-decoration-color: #ffffff;
+    z-index: 9998;
+    position: absolute;
+    color: rgb(255, 255, 255);
+}
+.txtscore{
+    margin-top: 100px;
+    text-decoration-color: #ffffff;
+    z-index: 9998;
+    position: absolute;
+    color: rgb(255, 255, 255);
+}
+
+.blue {
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+}
+.red {
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%;
+}
+.yellow {
+    grid-area: amarelo;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+}
+.green {
+    grid-area: verde;
+    background-color: green;
+    border-top-left-radius: 100%;
+}
+.selected {
+    opacity: 0.3;
+}
+.msgactive{
+    display: flex;
+}
+.msgdesactive{
+    display: none;
+}
+#t1{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto; 
+    font-size: 30px;
+    font-style: italic;
+}
+#txtbody{
+margin-bottom: 10px;
+font-size: 20px;
+}
+.geniusimg{
+    border-radius: 5px;
+    margin-bottom: 15px;
+    max-width: 100%;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#btIniciar{
+    width: 150px;
+    height: 40px;
+    font-size: 25px;
+}
+#btIniciar:hover{
+   background-color: yellow;
+}
+.contatc_list{
+    list-style-type: none;
+    padding: 0px;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+.contatc_list li a{
+    text-decoration: none;
+}
