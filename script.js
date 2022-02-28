@@ -33,6 +33,9 @@ let lightColor = (element, number) => {
 let checkOrder = () => {
     for(let i in clickedOrder) {
         if(clickedOrder[i] != order[i]) {
+            if(score < 0){
+                score = 0;
+            }
             gameOver();
             break;
         }
@@ -85,6 +88,7 @@ let playGame = () => {
 //oculta mensagem incial e chama o inicio do jogo
 let hidemsg = () => {
     var display = document.getElementById("screenmsg").style.display = 'none';
+    var display2 = document.getElementById("maingame").style.display = 'flex';
     playGame();
 }
 //coleta os clicks
@@ -92,3 +96,5 @@ green.onclick = () => click(0);
 red.onclick = () => click(1);
 yellow.onclick = () => click(2);
 blue.onclick = () => click(3);
+
+var display3 = document.getElementById("maingame").style.display = 'none';

@@ -1,40 +1,37 @@
 body {
-    margin: 0;
-    background-color: rgb(78, 78, 78);
+    width: 98%;
+    height: 98%;
+    background-color: rgb(255, 255, 255);
 }
-.main-game {
-    height: 100vh;
-    width: 100vw;
+#maingame {
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #screenmsg{
-    text-align: center;
-    height: 100vh;
-    width: 100vw;
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
+    text-align: center;      
     z-index: 9999;
     position: absolute;
 }
-section div:first-child {
-    position: absolute;
-    z-index: 9999;
-    border: 30px solid #ffffff;
-    background-color: #ffffff;
-    width: 700px;
-    height: 700px;
-}
-section div:last-child {
-    position: absolute;
-    z-index: 9999;
-    border: 30px solid #ffffff;
-    background-color: #ffffff;
-    width: 700px;
-    height: 700px;
+.geniusimg{
+    border-radius: 5px;
+    margin-bottom: 15px;
+    max-width: 100%;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .genius {
     display: grid;
@@ -108,15 +105,6 @@ section div:last-child {
 #txtbody{
 margin-bottom: 10px;
 font-size: 20px;
-}
-.geniusimg{
-    border-radius: 5px;
-    margin-bottom: 15px;
-    max-width: 100%;
-    height: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 #btIniciar{
     width: 150px;
