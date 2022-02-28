@@ -29,7 +29,7 @@ let lightColor = (element, number) => {
         element.classList.remove('selected');
     }, number - 250);
 }
-//verifica se os botoes clicados são os mesmos gerados pelo sistema
+//Verifica se a ordem clicada pelo usuário foi a mesma que o sistema gerou
 let checkOrder = () => {
     for(let i in clickedOrder) {
         if(clickedOrder[i] != order[i]) {
@@ -42,7 +42,7 @@ let checkOrder = () => {
         nextLevel();
     }
 }
-//função para o click do usuário
+//acende a cor que o usuário clica e chama a função para verificar a ordem
 let click = (color) => {
     clickedOrder[clickedOrder.length] = color;
     createColorElement(color).classList.add('selected');
@@ -51,7 +51,7 @@ let click = (color) => {
         checkOrder();
     },250);
 }
-//funcção retorna cor
+//função retorna cor
 let createColorElement = (color) => {
     if(color == 0) {
         return green;
@@ -63,12 +63,12 @@ let createColorElement = (color) => {
         return blue;
     }
 }
-//função next level
+//função próximo level
 let nextLevel = () => {
     score++;
     shuffleOrder();
 }
-//função gameover
+//função GameOver
 let gameOver = () => {
     alert(`Pontuação: ${score - 1}!\nVocê errou!\nClique em OK para iniciar um novo jogo.`);
     order = [];
@@ -82,7 +82,7 @@ let playGame = () => {
     var pontuacao = document.getElementsByClassName("txtscore")[0].innerText = `Pontuação: ${score}`;
         nextLevel();
 }
-//oculta mensgaem e chama o inicio do jogo
+//oculta mensagem incial e chama o inicio do jogo
 let hidemsg = () => {
     var display = document.getElementById("screenmsg").style.display = 'none';
     playGame();
@@ -92,13 +92,3 @@ green.onclick = () => click(0);
 red.onclick = () => click(1);
 yellow.onclick = () => click(2);
 blue.onclick = () => click(3);
-//piscar o botão iniciar
-let lightbt = (btinicio) => {
-    var btinicio = document.getElementById("btIniciar").style.backgroundColor = blue;
-    setTimeout(() => {
-        var btinicio = document.getElementById("btIniciar").style.backgroundColor = red;
-    },250);
-    lightbt();
-}
-
-lightbt();
