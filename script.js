@@ -89,8 +89,13 @@ let playGame = () => {
 let hidemsg = () => {
     var display = document.getElementById("screenmsg").style.display = 'none';
     var display2 = document.getElementById("maingame").style.display = 'flex';
+    var bodybackcolor = document.getElementById("mainbody").style.backgroundColor = 'Black';
     playGame();
 }
+
+
+
+
 //coleta os clicks
 green.onclick = () => click(0);
 red.onclick = () => click(1);

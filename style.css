@@ -1,17 +1,17 @@
 body {
-    width: 98%;
-    height: 98%;
+    width: 96%;
+    height: 96%;
     background-color: rgb(255, 255, 255);
 }
 #maingame {
     margin: 0 auto;
+    margin-top: 30px;
     width: 980px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 #screenmsg{
     margin: 0 auto;
     width: 100%;
@@ -27,11 +27,34 @@ body {
 .geniusimg{
     border-radius: 5px;
     margin-bottom: 15px;
-    max-width: 100%;
-    height: 500px;
+    max-width: 90%;
+    max-height: 60%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+#buttoncenter{
+    height: 30%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9997;
+    position: absolute;
+}
+.centerbutton{     
+    display: flex;
+    z-index: 9997;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    border-radius: 100%;
 }
 .genius {
     display: grid;
@@ -41,16 +64,8 @@ body {
     border: 10px solid #000000;
     background-color: #000000;
     border-radius: 100%;
-    width: 700px;
-    height: 700px;
-}
-.centerbutton{
-    background-color: #000000;
-    border-radius: 100%;
-    width: 200px;
-    height: 200px; 
-    z-index: 9997;
-    position: absolute;
+    width: 600px;
+    height: 600px;
 }
 .txtcenterbutton{
     text-decoration-color: #ffffff;
@@ -87,7 +102,7 @@ body {
     border-top-left-radius: 100%;
 }
 .selected {
-    opacity: 0.3;
+    opacity: 0.5;
 }
 .msgactive{
     display: flex;
@@ -112,7 +127,8 @@ font-size: 20px;
     font-size: 25px;
 }
 #btIniciar:hover{
-   background-color: yellow;
+   background-color: blue;
+   text-decoration-color: White;
 }
 .contatc_list{
     list-style-type: none;
@@ -122,4 +138,16 @@ font-size: 20px;
 }
 .contatc_list li a{
     text-decoration: none;
+}
+.backblue {
+     background-color: blue;
+}
+.backred {
+     background-color: red;
+}
+.backgreen {
+     background-color: Green;
+}
+.backyellow {
+     background-color: yellow;
 }
